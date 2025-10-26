@@ -14,7 +14,7 @@
                 desenfoque: desenfocado !== null && desenfocado !== personaje.id,
                 ampliado: zoom === personaje.id
             }">
-                <img :src="personaje.image" :alt="personaje.title" />
+                <img v-lazy="personaje.image" :alt="personaje.title" />
                 <h2>{{ personaje.title }}</h2>
                 <h3>{{ personaje.nick }}</h3>
 

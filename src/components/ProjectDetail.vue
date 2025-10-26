@@ -1,8 +1,8 @@
 <template>
   <div v-if="project" class="detalle-proyecto">
     <div
-        class="personaje"
-        :style="{ backgroundImage: `url(${project.image})` }">
+      class="personaje"
+      v-lazy:background-image="project.image">
     </div>
     <div class="detalle-personaje">
         <h1>{{ project.title }}</h1>
