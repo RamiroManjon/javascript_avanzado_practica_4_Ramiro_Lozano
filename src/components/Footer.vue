@@ -3,7 +3,7 @@
         <div>
             <h1>Adiós, Nakama</h1>
             <div class="sombrero">
-                <img src="/images/farmer-hat.png" alt="">
+                <img v-lazy="'/images/farmer-hat.webp'" alt="">
             </div>
         </div>
     </footer>
